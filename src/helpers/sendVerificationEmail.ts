@@ -6,7 +6,7 @@ export async function sendVerificationEmail(
     email:string,
     username:string,
     verifyCode:string
-):Promise<ApiResponse>{
+):Promise<ApiResponse>{   //Yaha par type safety provide kar rha ehai Promise par jo humoog baye hia ApiResponse typoe me se 
     try{
         await resend.emails.send({
             from:'me@example.com',
